@@ -1,0 +1,13 @@
+shutdown:killAll GitHub
+clear:clear
+restart:cmd restart blah -xos
+
+apachestart:/etc/init.d/httpd start
+apachestop:/etc/init.d/httpd stop
+apacherestart:/etc/init.d/httpd restart
+apachestatus:/etc/init.d/httpd status
+
+mysqlstart:/etc/init.d/mysqld start
+mysqlstop:/etc/init.d/mysqld stop
+mysqlrestart:/etc/init.d/mysqld restart
+mysqlstatus:/etc/init.d/mysqld status
