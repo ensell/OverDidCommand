@@ -11,18 +11,22 @@
 import os
 import time
 import urllib
-#from Adafruit_I2C import Adafruit_I2C
 from time import sleep
-# import RPi.GPIO as GPIO
 
-Incomming = 'mysqlstart'
-Command = True
+# LIBRARIES NEEDED!
+# https://github.com/maliubiao/python-inotify
+# import pyinotify
+# import RPi.GPIO as GPIO
+#from Adafruit_I2C import Adafruit_I2C
+
+# Check for incomming command, run exec if there is one
+Incomming = ''
+if Incomming: execfile('exec.py')
 
 # Bring in all the modules
+# LCD commands
 #execfile('lcd.py')
-execfile('fan-control.py')
+# Check temperature
 execfile('pi-temp.py')
 
-if Command: execfile('exec.py')
 
-if piTemp > 160: print "Pi running hot"
